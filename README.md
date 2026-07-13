@@ -29,5 +29,17 @@ This repository is built for learning purposes, security research, and personal 
    python log-analyzer/log-analyzer.py
    ```
    
+- [SSH Tester](./ssh-tester/): A lightweight tool designed to test SSH connections, verify credentials, and check server availability.
+   
+   **Features:**
+   - Quick port availability check
+   - Automates verification of specified credentials
+   - Detailed error reporting for failed attempts
+   
+   **Usage:**
+   ```bash
+   python ssh-tester/ssh-tester.py
+   ```
+   
    
    
