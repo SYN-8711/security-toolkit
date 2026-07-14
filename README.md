@@ -41,5 +41,18 @@ This repository is built for learning purposes, security research, and personal 
    python ssh-tester/ssh-tester.py
    ```
    
-   
+- [Packet Sniffer](./packet-sniffer/): A powerful, low-level network analysis tool written in Python that captures, decodes, and inspects live network packets using raw sockets.
+
+   **Features:**
+   - **Ethernet Frame Decoding:** Unpacks Ethernet headers to extract Source/Destination MAC addresses and ethernet protocol types.
+   - **IPv4 Header Parsing:** Decodes IPv4 packets to retrieve Source/Destination IPs, Time-To-Live (TTL), and protocol types.
+   - **Multi-Protocol Support:** Deeply parses transport layer protocols including TCP (with flags like SYN, ACK, FIN), UDP (ports and sizes), and ICMP (type and code).
+   - **Structured JSON Logging:** Saves captured packets in a highly structured, clean JSON format for further analysis and debugging.
+
+   **Usage:**
+   > ⚠️ **Note:** Packet sniffing requires raw socket access, which needs administrative (root) privileges. This tool is designed to run on Linux environments supporting `AF_PACKET`.
+
+    ```bash
+    sudo python packet-sniffer/packet_sniffer.py 10
+    ```
    
